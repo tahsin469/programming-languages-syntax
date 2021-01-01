@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1609487795 source:c:\users\user\desktop\java code\c++\myfirstclass\myfirstclass.cpp
+	"myfirstclass.h"
+	<iostream>
+
+1609488681 c:\users\user\desktop\java code\c++\myfirstclass\myfirstclass.h
+	"myfirstclass.h"
+
+1609488758 source:c:\users\user\desktop\java code\c++\myfirstclass\main.cpp
+	<iostream>
+	"myfirstclass.h"
+
