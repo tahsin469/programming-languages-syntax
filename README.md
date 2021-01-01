@@ -1,1 +1,1 @@
-# Data-Structures-Algorithms
+# programming languages syntax
