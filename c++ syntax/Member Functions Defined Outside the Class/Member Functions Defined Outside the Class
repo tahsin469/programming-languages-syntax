@@ -14,3 +14,8 @@ If you like, you can define the same function outside the class using the scope 
 double Box::getVolume(void) {
    return length * breadth * height;
 }
+Here, only important point is that you would have to use class name just before :: operator. A member function will be called using a dot operator (.) on a object where it will manipulate data related to that object only as follows −
+
+Box myBox;          // Create an object
+
+myBox.getVolume();  // Call member function for the object
