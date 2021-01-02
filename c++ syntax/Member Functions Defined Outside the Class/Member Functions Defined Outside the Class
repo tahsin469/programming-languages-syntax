@@ -19,3 +19,59 @@ Here, only important point is that you would have to use class name just before 
 Box myBox;          // Create an object
 
 myBox.getVolume();  // Call member function for the object
+
+
+............................................
+
+If the member function is defined inside the class definition it can be defined directly, but if its defined outside the class, then we have to use the scope resolution :: operator along with class name alng with function name.
+
+For example:
+
+class Cube
+{
+    public:
+    int side;
+    /*
+        Declaring function getVolume 
+        with no argument and return type int.
+    */
+    int getVolume();     
+};
+If we define the function inside class then we don't not need to declare it first, we can directly define the function.
+
+class Cube
+{
+    public:
+    int side;
+    int getVolume()
+    {
+        return side*side*side;      //returns volume of cube
+    }
+};
+But if we plan to define the member function outside the class definition then we must declare the function inside class definition and then define it outside.
+
+class Cube
+{
+    public:
+    int side;
+    int getVolume();
+}
+
+// member function defined outside class definition
+int Cube :: getVolume()
+{
+    return side*side*side;
+}
+The main function for both the function definition will be same. Inside main() we will create object of class, and will call the member function using dot . operator.
+
+Calling Class Member Function in C++
+Similar to accessing a data member in the class, we can also access the public member functions through the class object using the dot operator (.).
+
+Below we have a simple code example, where we are creating an object of the class Cube and calling the member function getVolume():
+
+int main()
+{
+    Cube C1;
+    C1.side = 4;    // setting side value
+    cout<< "Volume of cube C1 = "<< C1.getVolume();
+}
